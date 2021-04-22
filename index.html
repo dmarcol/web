@@ -6,6 +6,39 @@
     html {
       scroll-behavior: smooth;
     }
+
+    .background-section{
+      background-color: pink;
+    }
+
+    /* Add a black background color to the top navigation */
+.topnav {
+  background-color:blue;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
 </style>    
 
  </head>
@@ -14,12 +47,12 @@
       <div id="home"></div>
 
     <header> <!--navigation menu-->
-      <nav style="font-size: larger;"></nav>
-    <a href="https://titan821.github.io/web/#home">Work experience</a>
+      <div class="topnav">
+    <a class="active"href="https://titan821.github.io/web/#home">Work experience</a>
     <a href="https://titan821.github.io/web/#education">Education</a>
     <a href="https://titan821.github.io/web/#contact">Contact</a>
     <a href="https://titan821.github.io/web/#about">About me</a>
-      </nav>
+  </div>
     </header>  
 <br><br><br>
      
@@ -91,7 +124,7 @@ Job responsibilities:</p>
 
 </Section>
 
-<section style="background-color: aliceblue;">
+<section class="background-section">
 
 <h3>certifications</h3>
 <p>2015 - CCNA Routing & Switching</p>
@@ -129,7 +162,7 @@ Native: Czech, Polish   /  Professional: English   /   Basic: German
 
  
     <br>
-    <section style="background-color: aliceblue;">
+    <section class="background-section">
     
     <div id="about"></div>
     <center><a href="https://lysacup.cz/zavodnik/ukaz/2437">
