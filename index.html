@@ -7,9 +7,17 @@
     html {
       scroll-behavior: smooth;
     }
+    /*styling for two columns in section 5*/
 
 
 
+    .section5{
+      height: 600px;
+      
+      background-color:aliceblue;
+      font-family: Arial
+
+    }
     .section1{
       height: 1400px;
       background-color:aliceblue;
@@ -44,6 +52,33 @@
   overflow: hidden;
 }
 
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 400px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
@@ -63,8 +98,8 @@
 /* Add a color to the active/current link */
 .topnav a.active {
   background-color:blue
-  color: white;
-}
+  color: black;
+ }
 
 </style>    
 
@@ -82,14 +117,26 @@
   </div>
     </header>  
 <br><br><br>
+
+
      
      
+   
+  <div class="row">
+    <div class="column">
+      <h1>Daniel Marcol</h1>
+      <h3><i>network operator and IT enthusiast</i></h3>
+        <image src="dan.PNG" alt="Daniel Marcol"></image>
+       </div>
+      
+    <br><br>
+      <div class="column">
+        <h3>Call me: 720 322 618 </h3>
+        <h3><a href="mailto:dmarcol82@gmail.com">Contact me via email</a></h3>
+          dmarcol82@gmail.com 
+      </div>
+    </div>
     
- 
-    
-    <h1>Daniel Marcol</h1>
-    <h3><i>network operator and IT enthusiast</i></h3>
-      <center><image src="dan.PNG" alt="Daniel Marcol"></image></center>
 
 <div class="section1">
 
