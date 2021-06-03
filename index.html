@@ -166,25 +166,41 @@ input[type=submit]:hover {
     <br>
       <div class="column">
        
- <center><h3>Contact Form</h3></center>
+ 
 
-<div class="container">
-  <form action="action_page.php">
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+<!-- Start Contact Form -->
+<form role="form" id="contactForm" class="contact-form" data-toggle="validator" class="shake">
+  <div class="form-group">
+    <div class="controls">
+      <input type="text" id="name" class="form-control" placeholder="Name" required data-error="Please enter your name">
+      <div class="help-block with-errors"></div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="controls">
+      <input type="email" class="email form-control" id="email" placeholder="Email" required data-error="Please enter your email">
+      <div class="help-block with-errors"></div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="controls">
+      <input type="text" id="msg_subject" class="form-control" placeholder="Subject" required data-error="Please enter your message subject">
+      <div class="help-block with-errors"></div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="controls">
+      <textarea id="message" rows="7" placeholder="Massage" class="form-control" required data-error="Write your message"></textarea>
+      <div class="help-block with-errors"></div>
+    </div>  
+  </div>
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  <button type="submit" id="submit" class="btn btn-effect"><i class="fa fa-check"></i> Send Message</button>
+  <div id="msgSubmit" class="h3 text-center hidden"></div> 
+  <div class="clearfix"></div>   
 
-    <label for="lname">Email</label>
-    <input type="text" id="email" name="email" placeholder="Your email..">
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-  </form>
-</div>
+</form>     
+<!-- End Contact Form -->
          </center>
       </div>
     </div>
