@@ -1,5 +1,5 @@
 <?php
-if (isset($_POST['submit'])) {
+if (isset($_POST['Submit'])) {
 
     $email_to = "dmarcol@seznam.cz";
     $email_subject = "New form submissions";
